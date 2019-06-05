@@ -228,8 +228,8 @@
 }
   
 .btn-square-above-look:active:before { 
-    width: -webkit-calc(100% - 12px);
-    width: calc(100% - 12px);
+    width: -webkit-calc(100%);
+    width: calc(100%);
 }
   
 .btn-square-above-look:active:before {

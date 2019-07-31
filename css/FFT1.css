@@ -35,6 +35,18 @@
       background: linear-gradient(90deg,#3f4593,#5960bd);
       margin: 0;
     }
+     /*タイトル*/
+     h1 {
+      text-align: center;  
+      top: 0%;
+      color: rgb(78, 78, 61);
+    }
+  
+    p{
+      text-align: center;  
+      color: rgb(78, 78, 61);
+      }
+
     ul {
       list-style: none;
       margin: 0;
@@ -44,89 +56,6 @@
       text-decoration: none;
       color: inherit;
     }
-    .main__menu {
-      display: grid;
-      grid-template-columns: repeat(5,1fr);
-    }
-    @media (max-width: 900px) {
-      .main__menu {
-        grid-template-columns: 1fr;
-        max-width: 300px;
-      }
-    }
-    .main__menu .list-item:hover .drop-menu li {
-      display: block;
-    }
-    .main__menu .list-item:hover .menu-1 {
-      perspective: 1000px;
-    }
-    
-    .main__menu .list-item:hover .menu-2 {
-      perspective: 1000px;
-    }
-    
-    .main__menu .list-item:hover .menu-3 {
-      perspective: 1000px;
-    }
-   
-    .main__menu .list-item:hover .menu-4 {
-      perspective: 1000px;
-    }
-    
-    .main__menu .list-item:hover .home {
-      border-top: 6px solid #33658a;
-    }
-    .main__menu .list-item:hover .about {
-      border-top: 6px solid #96c;
-    }
-    .main__menu .list-item:hover .widget {
-      border-top: 6px solid #f33;
-    }
-    .main__menu .list-item:hover .kabobs {
-      border-top: 6px solid #fc3;
-    }
-    .main__menu .list-item:hover .contact {
-      border-top: 6px solid #55dde0;
-    }
-    .main__menu .list-item a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      height: 80px;
-      color: #fff;
-      cursor: unset;
-    }
-    .main__menu .list-item a:hover {
-      cursor: pointer;
-    }
-    .main__menu .list-item a span {
-      font: 600 25px 'Roboto', sans-serif;
-      order: 2;
-    }
-    .main__menu .list-item a img {
-      width: 100px;
-    }
-    .main__menu .list-item a.home {
-      background: #f33;
-    }
-    .main__menu .list-item a.about {
-      background: #fc3;
-    }
-    .main__menu .list-item a.widget {
-      background: #55dde0;
-    }
-    .main__menu .list-item a.kabobs {
-      background: #96c;
-    }
-    .main__menu .list-item a.contact {
-      background: #33658a;
-    }
-    .main__menu .list-item a i {
-      color: #fff;
-      font-size: 100px;
-    }
-   
 
     .first {
       animation: first 10s infinite;
@@ -187,7 +116,7 @@
       }
 
 .txt {
-    margin-top: calc(50vh - 43px);
+    margin-top: calc(35vh - 43px);
     position: absolute;
     width: 100%;
     z-index: 1000;
@@ -236,5 +165,20 @@
     top:-12px;
     border-width: 6px;
 }
+/*new memberボタン*/
 
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #ff6795;
+  border: solid 2px #ff67a1;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #ff6795;
+  color: rgb(255, 255, 255);
+}
 
